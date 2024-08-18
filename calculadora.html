@@ -9,60 +9,57 @@
             margin: 0px;
             padding: 0px;
         }
-        body {
-            width: 100vw;
+        div.fundo {
             background-image: linear-gradient(45deg, black, red);
             height: 100vh;
             color: white;
-        }
-        h1 {
-            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
         div.calculadora {
             position: absolute;
             background-color: black;
-            width: 200px;
-            height: 300px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            border-radius: 15px;
+            padding: 15px;
         }
     </style>
 </head>
 <body>
-    <h1>LEANDRO LOPES</h1>
-    <div class="calculadora">
-        <h2>Calculadora</h2>
-        <p>Resultado</p>
-        <div>
+    <div class="fundo">
+        <h1>LEANDRO LOPES</h1>
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <p>Resultado</p>
             <table>
                 <tr>
-                    <td><button>C</button></td>
-                    <td><button><</button></td>
-                    <td><button>/</button></td>
-                    <td><button>*</button></td>
+                    <td class="botao"><button>C</button></td>
+                    <td class="botao"><button><</button></td>
+                    <td class="botao"><button>/</button></td>
+                    <td class="botao"><button>*</button></td>
                 </tr>
                 <tr>
-                    <td><button>7</button></td>
-                    <td><button>8</button></td>
-                    <td><button>9</button></td>
-                    <td><button>+</button></td>
+                    <td class="botao"><button>7</button></td>
+                    <td class="botao"><button>8</button></td>
+                    <td class="botao"><button>9</button></td>
+                    <td class="botao"><button>+</button></td>
                 </tr>
                 <tr>
-                    <td><button>4</button></td>
-                    <td><button>5</button></td>
-                    <td><button>6</button></td>
-                    <td><button>-</button></td>
+                    <td class="botao"><button>4</button></td>
+                    <td class="botao"><button>5</button></td>
+                    <td class="botao"><button>6</button></td>
+                    <td class="botao"><button>-</button></td>
                 </tr>
                 <tr>
-                    <td><button>1</button></td>
-                    <td><button>2</button></td>
-                    <td><button>3</button></td>
-                    <td rowspan="2"><button>=</button></td>
+                    <td class="botao"><button>1</button></td>
+                    <td class="botao"><button>2</button></td>
+                    <td class="botao"><button>3</button></td>
+                    <td  class="botao" rowspan="2"><button>=</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button>0</button></td>
-                    <td><button>.</button></td>
+                    <td class="botao" colspan="2"><button>0</button></td>
+                    <td class="botao"><button>.</button></td>
                 </tr>
             </table>
         </div>
