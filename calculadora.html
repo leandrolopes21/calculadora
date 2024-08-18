@@ -9,13 +9,14 @@
             margin: 0px;
             padding: 0px;
         }
-        div.fundo {
-            background-image: linear-gradient(45deg, black, red);
+        .fundo {
+            background-image: linear-gradient(45deg, #1F72DB, #9C7A3D, #DB981F, #405F86, #5C503B);
             height: 100vh;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
-        div.calculadora {
+        .calculadora {
             position: absolute;
             background-color: black;
             top: 50%;
@@ -24,42 +25,63 @@
             border-radius: 15px;
             padding: 15px;
         }
+        .botao {
+            height: 60px;
+            width: 60px;
+            font-size: 25px;
+            margin: 2px;
+            background-color: rgba(31, 31, 31);
+            border: none;
+            color: white;
+        }
+        .botao:hover {
+            background-color: black;
+        }
+        h2 {
+            padding: 10px;
+        }
+        #resultado {
+            background-color: white;
+            height: 40px;
+            margin: 10px;
+            border-radius: 2px;
+        }
     </style>
 </head>
 <body>
     <div class="fundo">
         <h1>LEANDRO LOPES</h1>
         <div class="calculadora">
-            <h2>Calculadora</h2>
-            <p>Resultado</p>
+            <h2>CALCULADORA</h2>
+            <p id="resultado">Resultado</p>
             <table>
                 <tr>
-                    <td class="botao"><button>C</button></td>
-                    <td class="botao"><button><</button></td>
-                    <td class="botao"><button>/</button></td>
-                    <td class="botao"><button>*</button></td>
+                    <td><button class="botao">C</button></td>
+                    <td><button class="botao"><</button></td>
+                    <td><button class="botao">/</button></td>
+                    <td><button class="botao">*</button></td>
                 </tr>
                 <tr>
-                    <td class="botao"><button>7</button></td>
-                    <td class="botao"><button>8</button></td>
-                    <td class="botao"><button>9</button></td>
-                    <td class="botao"><button>+</button></td>
+                    <td><button class="botao">7</button></td>
+                    <td><button class="botao">8</button></td>
+                    <td><button class="botao">9</button></td>
+                    <td><button class="botao">+</button></td>
                 </tr>
                 <tr>
-                    <td class="botao"><button>4</button></td>
-                    <td class="botao"><button>5</button></td>
-                    <td class="botao"><button>6</button></td>
-                    <td class="botao"><button>-</button></td>
+                    <td><button class="botao">4</button></td>
+                    <td><button class="botao">5</button></td>
+                    <td><button class="botao">6</button></td>
+                    <td><button class="botao">-</button></td>
                 </tr>
                 <tr>
-                    <td class="botao"><button>1</button></td>
-                    <td class="botao"><button>2</button></td>
-                    <td class="botao"><button>3</button></td>
-                    <td  class="botao" rowspan="2"><button>=</button></td>
+                    <td ><button class="botao">1</button></td>
+                    <td ><button class="botao">2</button></td>
+                    <td ><button class="botao">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 126px;">=</button></td>
                 </tr>
                 <tr>
-                    <td class="botao" colspan="2"><button>0</button></td>
-                    <td class="botao"><button>.</button></td>
+                    <td colspan="2"><button class="botao" style="width: 126px;">0</button></td>
+                    <td><button class="botao">.</button></td>
                 </tr>
             </table>
         </div>
